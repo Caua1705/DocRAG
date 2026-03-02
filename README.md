@@ -1,5 +1,11 @@
 # 📚 DocRAG – Retrieval-Augmented Conversational AI System
 
+## 🌐 Live Demo
+
+🔗 [DocRAG Application](https://docrag-ai.streamlit.app)
+
+---
+
 DocRAG is a modular Retrieval-Augmented Generation (RAG) system designed for scalable and efficient question-answering over unstructured data sources.
 
 Instead of injecting entire documents into a prompt (which is inefficient and non-scalable), DocRAG implements semantic search using embeddings and a FAISS vector database to retrieve only the most relevant chunks before passing structured context to a Large Language Model (LLM).
