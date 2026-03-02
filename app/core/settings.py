@@ -19,8 +19,8 @@ class FileType(str, Enum):
 class Provider(str, Enum):
     """Supported LLM providers."""
 
-    GROQ = "Groq"
     OPENAI = "OpenAI"
+    GROQ = "Groq"
 
 
 MODEL_REGISTRY: Dict[Provider, Dict[str, object]] = {
