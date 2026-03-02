@@ -17,8 +17,18 @@ def sidebar() -> None:
             ["Site", "Youtube", "Pdf", "Csv", "Txt"],
         )
 
-        if file_type in {"Site", "Youtube"}:
-            file_input = st.text_input("Enter URL or video ID")
+        if file_type == "Youtube":
+            file_input = st.text_input(
+                "YouTube Video ID",
+                help="Example: dQw4w9WgXcQ"
+            )
+
+        elif file_type == "Site":
+            file_input = st.text_input(
+                "Website URL",
+                help="Example: https://example.com"
+            )
+
         else:
             file_input = st.file_uploader("Upload file")
 
